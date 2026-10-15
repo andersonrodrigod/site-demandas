@@ -1,0 +1,75 @@
+PAINEL DE TRABALHO — ANDERSON
+
+COMO ABRIR
+Abra central_demandas_prototipo.html no navegador. Mantenha dados.js, painel.js e painel.css na mesma pasta.
+Para prévia local: execute node preview.cjs e abra http://127.0.0.1:4173.
+O arquivo central_demandas_original.html preserva o protótipo anterior.
+
+ATUALIZAÇÃO POR PROMPT
+Você conta o que mudou neste chat do Codex. O Codex altera os arquivos desta pasta; ao recarregar o painel, a versão nova aparece.
+Não há formulário de cadastro, edição, exclusão ou gravação no navegador. Busca, filtros e abertura de detalhes só alteram a visualização.
+O arquivo dados.js concentra projetos, status, próximos passos, marcos e histórico. Os contadores são calculados a partir desses dados.
+A página não está conectada a um serviço de IA e não coleta automaticamente e-mails ou Teams.
+
+EXEMPLOS DE PROMPTS
+- Adicione uma frente chamada [nome], sobre [objetivo], em planejamento. Próximo passo: [etapa].
+- Atualize Complicações cirúrgicas: o fluxo ODI foi validado hoje. Registre esse avanço no histórico e coloque como próximo passo a documentação para a equipe.
+- Registre uma entrega do Painel de partos em [data]: [o que foi feito e o resultado].
+- Mude a prioridade máxima para [projeto] e atualize o resumo executivo.
+- Inclua um marco de [projeto] para [data]: [descrição].
+- Atualize o painel com este resumo da semana: [texto livre].
+
+COMO COMPARTILHAR COM O GESTOR
+A prévia localhost funciona somente neste computador. Para ter um endereço compartilhável, publique os quatro arquivos do painel em uma hospedagem aprovada para esse conteúdo; o HTML pode ser renomeado para index.html na publicação.
+O modo somente leitura significa que a interface não permite alterar os dados. Controle de quem pode acessar depende da hospedagem.
+Atualizar os arquivos locais não altera uma cópia enviada ou publicada: é preciso atualizar também a versão publicada.
+O protótipo antigo usava localStorage. Registros que você tenha criado nele continuam no navegador antigo, mas não são importados automaticamente para este painel.
+
+REFERÊNCIAS DE ORGANIZAÇÃO BASEADAS NAS SUAS ATIVIDADES
+1. Painel executivo — adotado nesta versão.
+   Abre com prioridade máxima, frentes paralelas e próximos marcos. Ajuda o gestor a entender a situação rapidamente.
+2. Portfólio por resultado.
+   Agrupar o trabalho em dados assistenciais (complicações e partos), experiência (Pesquisa 5 Estrelas) e processos (app de chamados). Em cada card: problema, contribuição, próximo passo e evidência da entrega.
+3. Resumo semanal.
+   Apresentar “avançou nesta semana”, “foco da próxima semana” e “preciso de uma decisão”. É adequado às reuniões com o gestor. Precisa dos avanços reais informados por você.
+4. Mapa de continuidade.
+   Para ODI e Power BI: rotina, documentação, responsável pela execução e pendências. Ajuda a acompanhar a preparação das férias sem depender apenas de status genéricos.
+5. Histórico de impacto.
+   Conectar cada entrega ao efeito observado: tempo economizado, rotina documentada, painel validado ou solicitações organizadas. Só incluir números quando houver evidência.
+
+BASE DE INFORMAÇÕES
+As quatro frentes e seus status vêm do HTML original. As descrições de propósito são sínteses desse conteúdo, e não comprovação de resultados alcançados.
+Pedidos fictícios não foram migrados. Nenhum percentual de conclusão ou entrega foi inventado.
+Para enriquecer o painel, basta informar por prompt outras atividades, solicitantes, datas, avanços, dependências e resultados.
+
+NEXT.JS / PROTÓTIPO 3D — VERSÃO ATUAL
+A entrada principal agora é o aplicativo Next.js em http://127.0.0.1:3000.
+Comandos: npm run dev (desenvolvimento), npm run build (compilar), npm run start (servir a compilação).
+Dados da versão nova: content/painel.json. A página carrega esse arquivo no build; depois de alterações no modo produção é necessário compilar e reiniciar o servidor. No modo dev, alterações aparecem automaticamente.
+Cena 3D original: app/research-scene.js. Interface: app/dashboard.js. Estilos: app/globals.css.
+Este protótipo contém apenas o centro Pesquisa 5 Estrelas para validar visual e interação. Os outros projetos permanecem no arquivo de dados; ainda não estão representados no mapa.
+A animação ilustra o ambiente: não representa quantidade real de pessoas nem atividade real. Há pausa e respeito à preferência de movimento reduzido do dispositivo.
+Controles: arraste para girar; scroll ou botões + / - para zoom; casa restaura a câmera; clique no centro ou no marcador para abrir os detalhes. A aba Visão do projeto permite consulta em texto.
+Os arquivos HTML/JS anteriores são versões preservadas. Não são a entrada da versão 3D.
+
+CAMPUS COMPLETO — CINCO CENTROS
+O usuário aprovou a expansão. A cena agora representa Pesquisa 5 Estrelas, Complicações cirúrgicas, Painel de partos, Escuta ativa e App de chamados.
+Cada prédio ou marcador abre sua própria ficha. Os atalhos acima do mapa permitem selecionar por nome. A aba Frentes permite consultar todas as iniciativas em cards. “Localizar no mapa” aproxima a câmera do centro; o botão de casa restaura a vista geral. Arrastar com o botão direito desloca o mapa.
+Configuração dos centros e posições: app/centers.js.
+Escuta ativa possui status “A detalhar”: o público foi informado, mas o andamento ainda não. Nenhuma entrega foi inventada.
+Os próximos campos de demandas e novos registros serão definidos depois com Anderson. O conteúdo continua em content/painel.json.
+
+AMBIENTE E TRÂNSITO
+O campus possui bordas arredondadas, jardins, árvores adicionais e estacionamento sinalizado.
+app/traffic.js contém os veículos e suas trajetórias: três carros e uma ambulância circulam e retornam às vagas, intercalando espera. Há também carros estacionados.
+Pausa/retomada controla pessoas e veículos juntos. A aba Frentes também pausa o movimento. O cenário respeita a preferência de movimento reduzido do dispositivo.
+Controles do mouse: botão esquerdo arrasta o mapa; direito gira a câmera; scroll aproxima/afasta. O botão de casa restaura o enquadramento inicial. No toque, um dedo gira e dois dedos permitem zoom/deslocamento.
+Logotipo da ambulância: public/brands/hapvida.png, obtido de https://www2.hapvida.com.br/image/layout_set_logo?img_id=12975833&t=1791475414040 em 15/10/2026. Identificação apenas ilustrativa da maquete.
+
+GITHUB PAGES
+A publicação está preparada em .github/workflows/pages.yml. O workflow compila a aplicação estática e publica somente out/, sem os protótipos antigos.
+No repositório de destino, use a branch main e Settings > Pages > Source: GitHub Actions. Cada push em main publica uma nova versão.
+next.config.mjs ativa a exportação com STATIC_EXPORT=true. NEXT_PUBLIC_BASE_PATH recebe automaticamente a subpasta do Pages, inclusive para o logo da ambulância. Sem essas variáveis, npm run dev/build/start continuam no modo local anterior.
+Atualizações de conteúdo: alterar content/painel.json, revisar e enviar ao GitHub. O Actions recompila e publica. Nenhuma chave de IA ou formulário é necessário.
+Preparação local não significa publicação: ainda é necessário definir o repositório de destino e verificar o deploy.
+

@@ -1,0 +1,113 @@
+{
+  "updatedAt": "2026-10-15",
+  "owner": "Anderson",
+  "headline": "Clareza para acompanhar. Foco para entregar.",
+  "summary": "Cinco frentes conectam pesquisa, dados assistenciais, escuta de prestadores, vendedores e fornecedores e organização das demandas. A Pesquisa 5 Estrelas assume a prioridade a partir de 16 de outubro; as demais iniciativas seguem conforme o andamento informado e a capacidade.",
+  "projects": [
+    {
+      "id": "pesquisa",
+      "name": "Pesquisa 5 Estrelas",
+      "category": "Experiência e qualidade",
+      "icon": "star",
+      "status": "Programado",
+      "priority": "Máxima",
+      "start": "2026-10-16",
+      "description": "Pesquisa de satisfação que passa a ocupar o topo da fila de trabalho a partir de 16 de outubro.",
+      "impact": "Acompanhar a satisfação e apoiar a leitura da experiência dos respondentes.",
+      "next": "Iniciar a frente prioritária em 16/10 e registrar o escopo e os próximos marcos.",
+      "tools": [
+        "Pesquisa de satisfação"
+      ],
+      "dependency": "Escopo e marcos ainda não registrados.",
+      "delivery": "Prazo final não informado.",
+      "context": "A prioridade está definida no painel original. As demais frentes seguem em paralelo conforme a capacidade disponível.",
+      "color": "orange"
+    },
+    {
+      "id": "complicacoes",
+      "name": "Complicações cirúrgicas",
+      "category": "Dados assistenciais",
+      "icon": "activity",
+      "status": "Em andamento",
+      "priority": "Regular",
+      "start": null,
+      "description": "Construção do fluxo no ODI e do painel Power BI, com padronização da execução da pesquisa.",
+      "impact": "Dar continuidade à rotina do setor durante as férias, com um processo que a equipe consiga executar.",
+      "next": "Padronizar o fluxo ODI e o uso do painel para continuidade pela equipe.",
+      "tools": [
+        "ODI",
+        "Power BI"
+      ],
+      "dependency": "Etapas de validação e responsáveis ainda não registrados.",
+      "delivery": "Sem data final definida.",
+      "context": "O foco descrito é estruturar o processo e permitir sua execução pelo setor durante as férias.",
+      "color": "teal"
+    },
+    {
+      "id": "partos",
+      "name": "Painel de partos",
+      "category": "Inteligência e indicadores",
+      "icon": "chart",
+      "status": "Em andamento",
+      "priority": "Regular",
+      "start": null,
+      "description": "Estruturação e desenvolvimento de um painel para análise e acompanhamento de partos.",
+      "impact": "Organizar as informações para facilitar a análise e o acompanhamento assistencial.",
+      "next": "Detalhar os indicadores, o estágio atual e as próximas etapas por prompt.",
+      "tools": [
+        "Painel de indicadores"
+      ],
+      "dependency": "Indicadores, fontes e validações ainda não registrados.",
+      "delivery": "Prazo não informado.",
+      "context": "O painel original informa que a frente está em desenvolvimento, sem detalhar etapas concluídas.",
+      "color": "blue"
+    },
+    {
+      "id": "chamados",
+      "name": "App de chamados",
+      "category": "Processos e tecnologia",
+      "icon": "grid",
+      "status": "Em planejamento",
+      "priority": "Regular",
+      "start": null,
+      "description": "Planejamento de um aplicativo para centralizar o acompanhamento e a gestão das solicitações.",
+      "impact": "Reunir as demandas em um fluxo organizado, com mais visibilidade do acompanhamento.",
+      "next": "Detalhar o escopo inicial e as etapas de planejamento por prompt.",
+      "tools": [
+        "Gestão de solicitações"
+      ],
+      "dependency": "Escopo, tecnologia e responsáveis ainda não registrados.",
+      "delivery": "Prazo não informado.",
+      "context": "A iniciativa está em planejamento. Não há funcionalidades concluídas registradas.",
+      "color": "purple"
+    },
+    {
+      "id": "escuta",
+      "name": "Escuta ativa",
+      "category": "Relacionamento e pesquisa",
+      "icon": "listen",
+      "status": "A detalhar",
+      "priority": "Regular",
+      "start": null,
+      "description": "Pesquisa de escuta com prestadores, vendedores e fornecedores da empresa.",
+      "impact": "Ouvir as percepções desses públicos sobre seu relacionamento com a empresa.",
+      "next": "Próximas etapas ainda não informadas.",
+      "tools": [
+        "Pesquisa de escuta"
+      ],
+      "dependency": "Escopo, responsáveis e etapas ainda não detalhados.",
+      "delivery": "Prazo não informado.",
+      "context": "Frente informada por Anderson durante a definição do campus. Status e avanços ainda não foram informados.",
+      "color": "teal"
+    }
+  ],
+  "updates": [],
+  "milestones": [
+    {
+      "date": "2026-10-16",
+      "projectId": "pesquisa",
+      "title": "Início da prioridade máxima",
+      "description": "Pesquisa 5 Estrelas assume o topo da fila."
+    }
+  ]
+}
