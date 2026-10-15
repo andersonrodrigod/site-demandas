@@ -35,7 +35,7 @@ Este é um painel pessoal de Anderson para leitura pelo gestor. O usuário quer 
 - Logotipo local da ambulância em public/brands/hapvida.png, origem no site oficial registrada em GUIA.txt.
 
 ## GitHub Pages
-- Workflow em .github/workflows/pages.yml: push main ou execução manual; publica apenas out/.
+- Workflow em .github/workflows/pages.yml: push master ou execução manual; publica apenas out/.
 - Exportação condicional STATIC_EXPORT=true; NEXT_PUBLIC_BASE_PATH deve ser aplicado também a assets públicos carregados diretamente no Three.js.
 - Modo local continua compatível com next start. Não publicar conteúdo sem destino autorizado pelo usuário.
 

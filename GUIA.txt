@@ -68,7 +68,7 @@ Logotipo da ambulância: public/brands/hapvida.png, obtido de https://www2.hapvi
 
 GITHUB PAGES
 A publicação está preparada em .github/workflows/pages.yml. O workflow compila a aplicação estática e publica somente out/, sem os protótipos antigos.
-No repositório de destino, use a branch main e Settings > Pages > Source: GitHub Actions. Cada push em main publica uma nova versão.
+No repositório de destino, use a branch master e Settings > Pages > Source: GitHub Actions. Cada push em master publica uma nova versão.
 next.config.mjs ativa a exportação com STATIC_EXPORT=true. NEXT_PUBLIC_BASE_PATH recebe automaticamente a subpasta do Pages, inclusive para o logo da ambulância. Sem essas variáveis, npm run dev/build/start continuam no modo local anterior.
 Atualizações de conteúdo: alterar content/painel.json, revisar e enviar ao GitHub. O Actions recompila e publica. Nenhuma chave de IA ou formulário é necessário.
 Preparação local não significa publicação: ainda é necessário definir o repositório de destino e verificar o deploy.
