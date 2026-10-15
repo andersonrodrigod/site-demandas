@@ -39,3 +39,5 @@ Este é um painel pessoal de Anderson para leitura pelo gestor. O usuário quer 
 - Exportação condicional STATIC_EXPORT=true; NEXT_PUBLIC_BASE_PATH deve ser aplicado também a assets públicos carregados diretamente no Three.js.
 - Modo local continua compatível com next start. Não publicar conteúdo sem destino autorizado pelo usuário.
 
+
+- Preferência explícita de Anderson: o mapa deve iniciar em movimento, inclusive com movimento reduzido no dispositivo. Manter o botão de pausa manual.

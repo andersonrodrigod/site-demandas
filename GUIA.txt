@@ -73,3 +73,5 @@ next.config.mjs ativa a exportação com STATIC_EXPORT=true. NEXT_PUBLIC_BASE_PA
 Atualizações de conteúdo: alterar content/painel.json, revisar e enviar ao GitHub. O Actions recompila e publica. Nenhuma chave de IA ou formulário é necessário.
 Preparação local não significa publicação: ainda é necessário definir o repositório de destino e verificar o deploy.
 
+
+MOVIMENTO INICIAL: por solicitação de Anderson, o mapa inicia animado. A pausa é manual pelo botão Pausar movimento. Esta preferência substitui a pausa automática por movimento reduzido descrita acima.
